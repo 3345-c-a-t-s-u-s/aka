@@ -1,4 +1,4 @@
-local Path = workspace.Section1.NPC.Keneo -- Keneo
+local RBX_SYS = game.TextChatService:WaitForChild("TextChannels"):WaitForChild("RBXSystem")
 
 local Instance_Info = ({
 	['Part'] = {
@@ -410,4 +410,55 @@ local function RunningCommand(Model:Model)
 	return Coding
 end
 
-writefile('Keneo.txt',tostring(RunningCommand(Path)))
+local ScreenGui = Instance.new("ScreenGui")
+local TextBox = Instance.new("TextBox")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChildWhichIsA('ScreenGui')
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.ResetOnSpawn = false
+
+TextBox.Parent = ScreenGui
+TextBox.AnchorPoint = Vector2.new(0.5, 0.5)
+TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BackgroundTransparency = 0.700
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.5, 0, 0.0250000004, 0)
+TextBox.Size = UDim2.new(0.300000012, 0, 0.0250000004, 0)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "Enter command"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+--writefile('Keneo.txt',tostring(RunningCommand(Path)))
+local method = 'wait_for_function'
+local value = {
+	modelpath = '',
+	filename = ''
+}
+
+TextBox.FocusLost:Connect(function()
+	local msg = TextBox.Text
+	if msg == '/start' and method == 'wait_for_function' then
+		RBX_SYS:DisplaySystemMessage('pls path to the model by /path ...')
+		method = 'wait_for_path'
+	elseif msg:find('/path') and method == 'wait_for_path'  then
+		local path = msg:sub(6)
+		value.modelpath = path
+		RBX_SYS:DisplaySystemMessage('file name by /name ....')
+		method = 'wait_for_filename'
+	elseif msg:find('/name') and method == 'wait_for_filename'  then
+		local name = msg:sub(6)
+		value.filename = name
+		RBX_SYS:DisplaySystemMessage('data: [ Path:'..tostring(value.modelpath)..',Name:'..tostring(value.filename)..']')
+		RBX_SYS:DisplaySystemMessage('Coding')
+		local model = loadstring('return '..tostring(value.modelpath))()
+		writefile(tostring(value.filename)..'.txt',tostring(RunningCommand(model)))
+		RBX_SYS:DisplaySystemMessage('Save to '..tostring(value.filename)..'.txt')
+		method = 'wait_for_function'
+	end
+end)
