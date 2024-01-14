@@ -1,4 +1,4 @@
-local Path = workspace.EnzukaiPose
+local Path = workspace.Section1.NPC.Keneo -- Keneo
 
 local Instance_Info = ({
 	['Part'] = {
@@ -410,4 +410,4 @@ local function RunningCommand(Model:Model)
 	return Coding
 end
 
-writefile('EnzukaiPose.txt',tostring(RunningCommand(Path)))
+writefile('Keneo.txt',tostring(RunningCommand(Path)))
