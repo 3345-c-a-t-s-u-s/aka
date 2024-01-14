@@ -1,4 +1,4 @@
-local Path = workspace.R6
+local Path = workspace.Yurei
 
 local Instance_Info = ({
 	['Part'] = {
@@ -410,4 +410,4 @@ local function RunningCommand(Model:Model)
 	return Coding
 end
 
-RunningCommand(Path)
+writefile('leak1.txt',tostring(RunningCommand(Path)))
