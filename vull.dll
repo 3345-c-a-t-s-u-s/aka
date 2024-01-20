@@ -1,0 +1,507 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local MouseTarget = Instance.new("ScrollingFrame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local MouseTargetrButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local CameraCFrame = Instance.new("TextLabel")
+local UIStroke = Instance.new("UIStroke")
+local UICorner_4 = Instance.new("UICorner")
+local CameraCFrameButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local PlayerCFrame = Instance.new("TextLabel")
+local UIStroke_2 = Instance.new("UIStroke")
+local UICorner_6 = Instance.new("UICorner")
+local PlayerCFrameButton = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Infinite_Yield = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local DarkDexv5 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local DarkDexv3 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local DropShadowHolder = Instance.new("Frame")
+local DropShadow = Instance.new("ImageLabel")
+
+local HiUI = game:FindFirstChild('CoreGui') or game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+ScreenGui.Parent = HiUI
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Frame.BackgroundTransparency = 0.500
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0840639621, 0, 0.0605640821, 0)
+Frame.Size = UDim2.new(0, 281, 0, 317)
+
+UICorner.Parent = Frame
+
+MouseTarget.Name = "MouseTarget"
+MouseTarget.Parent = Frame
+MouseTarget.Active = true
+MouseTarget.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MouseTarget.BackgroundTransparency = 0.900
+MouseTarget.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MouseTarget.BorderSizePixel = 0
+MouseTarget.Position = UDim2.new(0.0498219542, 0, 0.0851735026, 0)
+MouseTarget.Size = UDim2.new(0.900000095, 0, 0.318927467, 0)
+MouseTarget.ZIndex = 3
+MouseTarget.ScrollBarThickness = 2
+
+UICorner_2.Parent = MouseTarget
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(5.430174e-08, 0, 0.0189274456, 0)
+TextLabel.Size = UDim2.new(0.999999881, 0, 0.0463722423, 0)
+TextLabel.ZIndex = 3
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "MOBILE HACKER"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+MouseTargetrButton.Name = "MouseTargetrButton"
+MouseTargetrButton.Parent = Frame
+MouseTargetrButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MouseTargetrButton.BackgroundTransparency = 0.500
+MouseTargetrButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MouseTargetrButton.BorderSizePixel = 0
+MouseTargetrButton.Position = UDim2.new(0.0498220921, 0, 0.447949469, 0)
+MouseTargetrButton.Size = UDim2.new(0.899999917, 0, 0.0652996898, 0)
+MouseTargetrButton.ZIndex = 3
+MouseTargetrButton.Font = Enum.Font.Code
+MouseTargetrButton.Text = "Click To View Object"
+MouseTargetrButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MouseTargetrButton.TextScaled = true
+MouseTargetrButton.TextSize = 14.000
+MouseTargetrButton.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 3)
+UICorner_3.Parent = MouseTargetrButton
+
+CameraCFrame.Name = "CameraCFrame"
+CameraCFrame.Parent = Frame
+CameraCFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CameraCFrame.BackgroundTransparency = 1.000
+CameraCFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CameraCFrame.BorderSizePixel = 0
+CameraCFrame.Position = UDim2.new(0.049821984, 0, 0.558359623, 0)
+CameraCFrame.Size = UDim2.new(0.637010753, 0, 0.0463722423, 0)
+CameraCFrame.ZIndex = 3
+CameraCFrame.Font = Enum.Font.SourceSansBold
+CameraCFrame.Text = "1,1,1,1,1,1,1,1"
+CameraCFrame.TextColor3 = Color3.fromRGB(255, 255, 255)
+CameraCFrame.TextScaled = true
+CameraCFrame.TextSize = 14.000
+CameraCFrame.TextWrapped = true
+
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke.Parent = CameraCFrame
+
+UICorner_4.CornerRadius = UDim.new(0, 3)
+UICorner_4.Parent = CameraCFrame
+
+CameraCFrameButton.Name = "CameraCFrameButton"
+CameraCFrameButton.Parent = Frame
+CameraCFrameButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CameraCFrameButton.BackgroundTransparency = 0.500
+CameraCFrameButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CameraCFrameButton.BorderSizePixel = 0
+CameraCFrameButton.Position = UDim2.new(0.708185196, 0, 0.548895836, 0)
+CameraCFrameButton.Size = UDim2.new(0.241636887, 0, 0.0652996898, 0)
+CameraCFrameButton.ZIndex = 3
+CameraCFrameButton.Font = Enum.Font.Code
+CameraCFrameButton.Text = "COPY"
+CameraCFrameButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CameraCFrameButton.TextScaled = true
+CameraCFrameButton.TextSize = 14.000
+CameraCFrameButton.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 3)
+UICorner_5.Parent = CameraCFrameButton
+
+PlayerCFrame.Name = "PlayerCFrame"
+PlayerCFrame.Parent = Frame
+PlayerCFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerCFrame.BackgroundTransparency = 1.000
+PlayerCFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerCFrame.BorderSizePixel = 0
+PlayerCFrame.Position = UDim2.new(0.049821984, 0, 0.662460566, 0)
+PlayerCFrame.Size = UDim2.new(0.637010753, 0, 0.0463722423, 0)
+PlayerCFrame.ZIndex = 3
+PlayerCFrame.Font = Enum.Font.SourceSansBold
+PlayerCFrame.Text = "1,1,1,1,1,1,1,1"
+PlayerCFrame.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerCFrame.TextScaled = true
+PlayerCFrame.TextSize = 14.000
+PlayerCFrame.TextWrapped = true
+
+UIStroke_2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_2.Parent = PlayerCFrame
+
+UICorner_6.CornerRadius = UDim.new(0, 3)
+UICorner_6.Parent = PlayerCFrame
+
+PlayerCFrameButton.Name = "PlayerCFrameButton"
+PlayerCFrameButton.Parent = Frame
+PlayerCFrameButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PlayerCFrameButton.BackgroundTransparency = 0.500
+PlayerCFrameButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerCFrameButton.BorderSizePixel = 0
+PlayerCFrameButton.Position = UDim2.new(0.708185196, 0, 0.652996778, 0)
+PlayerCFrameButton.Size = UDim2.new(0.241636887, 0, 0.0652996898, 0)
+PlayerCFrameButton.ZIndex = 3
+PlayerCFrameButton.Font = Enum.Font.Code
+PlayerCFrameButton.Text = "COPY"
+PlayerCFrameButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerCFrameButton.TextScaled = true
+PlayerCFrameButton.TextSize = 14.000
+PlayerCFrameButton.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 3)
+UICorner_7.Parent = PlayerCFrameButton
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0498221181, 0, 0.513249159, 0)
+TextLabel_2.Size = UDim2.new(0.637010574, 0, 0.0347003229, 0)
+TextLabel_2.ZIndex = 3
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "CAMERA"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.0462634005, 0, 0.614195526, 0)
+TextLabel_3.Size = UDim2.new(0.637010574, 0, 0.0347003229, 0)
+TextLabel_3.ZIndex = 3
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "PLAYER"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Infinite_Yield.Name = "Infinite_Yield"
+Infinite_Yield.Parent = Frame
+Infinite_Yield.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Infinite_Yield.BackgroundTransparency = 0.500
+Infinite_Yield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Infinite_Yield.BorderSizePixel = 0
+Infinite_Yield.Position = UDim2.new(0.0498220921, 0, 0.766561449, 0)
+Infinite_Yield.Size = UDim2.new(0.899999917, 0, 0.0652996898, 0)
+Infinite_Yield.ZIndex = 3
+Infinite_Yield.Font = Enum.Font.Code
+Infinite_Yield.Text = "Infinite Yield"
+Infinite_Yield.TextColor3 = Color3.fromRGB(255, 255, 255)
+Infinite_Yield.TextScaled = true
+Infinite_Yield.TextSize = 14.000
+Infinite_Yield.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 3)
+UICorner_8.Parent = Infinite_Yield
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.0498221181, 0, 0.718296528, 0)
+TextLabel_4.Size = UDim2.new(0.637010574, 0, 0.0347003229, 0)
+TextLabel_4.ZIndex = 3
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "EXECUTE"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+DarkDexv5.Name = "DarkDexv5"
+DarkDexv5.Parent = Frame
+DarkDexv5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DarkDexv5.BackgroundTransparency = 0.500
+DarkDexv5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DarkDexv5.BorderSizePixel = 0
+DarkDexv5.Position = UDim2.new(0.0498220921, 0, 0.851734996, 0)
+DarkDexv5.Size = UDim2.new(0.899999917, 0, 0.0652996898, 0)
+DarkDexv5.ZIndex = 3
+DarkDexv5.Font = Enum.Font.Code
+DarkDexv5.Text = "Dark Dex V5"
+DarkDexv5.TextColor3 = Color3.fromRGB(255, 255, 255)
+DarkDexv5.TextScaled = true
+DarkDexv5.TextSize = 14.000
+DarkDexv5.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0, 3)
+UICorner_9.Parent = DarkDexv5
+
+DarkDexv3.Name = "DarkDexv3"
+DarkDexv3.Parent = Frame
+DarkDexv3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DarkDexv3.BackgroundTransparency = 0.500
+DarkDexv3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DarkDexv3.BorderSizePixel = 0
+DarkDexv3.Position = UDim2.new(0.0498220921, 0, 0.933753967, 0)
+DarkDexv3.Size = UDim2.new(0.899999917, 0, 0.0652996898, 0)
+DarkDexv3.ZIndex = 3
+DarkDexv3.Font = Enum.Font.Code
+DarkDexv3.Text = "Dark Dex V3"
+DarkDexv3.TextColor3 = Color3.fromRGB(255, 255, 255)
+DarkDexv3.TextScaled = true
+DarkDexv3.TextSize = 14.000
+DarkDexv3.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0, 3)
+UICorner_10.Parent = DarkDexv3
+
+DropShadowHolder.Name = "DropShadowHolder"
+DropShadowHolder.Parent = Frame
+DropShadowHolder.BackgroundTransparency = 1.000
+DropShadowHolder.BorderSizePixel = 0
+DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder.ZIndex = 0
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = DropShadowHolder
+DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow.BackgroundTransparency = 1.000
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow.Size = UDim2.new(1, 47, 1, 47)
+DropShadow.ZIndex = 0
+DropShadow.Image = "rbxassetid://6014261993"
+DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow.ImageTransparency = 0.500
+DropShadow.ScaleType = Enum.ScaleType.Slice
+DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
+
+
+local ObjectPathCopy = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local ObjectCopy = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+
+ObjectPathCopy.Name = "ObjectPathCopy"
+ObjectPathCopy.Parent = Frame
+ObjectPathCopy.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ObjectPathCopy.BackgroundTransparency = 0.500
+ObjectPathCopy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ObjectPathCopy.BorderSizePixel = 0
+ObjectPathCopy.Position = UDim2.new(0.651245534, 0, 0.403785437, 0)
+ObjectPathCopy.Size = UDim2.new(0.298576474, 0, 0.0441640466, 0)
+ObjectPathCopy.ZIndex = 3
+ObjectPathCopy.Font = Enum.Font.Code
+ObjectPathCopy.Text = "COPY PATH"
+ObjectPathCopy.TextColor3 = Color3.fromRGB(255, 255, 255)
+ObjectPathCopy.TextScaled = true
+ObjectPathCopy.TextSize = 14.000
+ObjectPathCopy.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = ObjectPathCopy
+
+ObjectCopy.Name = "ObjectCopy"
+ObjectCopy.Parent = Frame
+ObjectCopy.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ObjectCopy.BackgroundTransparency = 0.500
+ObjectCopy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ObjectCopy.BorderSizePixel = 0
+ObjectCopy.Position = UDim2.new(0.0498220623, 0, 0.403785437, 0)
+ObjectCopy.Size = UDim2.new(0.298576474, 0, 0.0441640466, 0)
+ObjectCopy.ZIndex = 3
+ObjectCopy.Font = Enum.Font.Code
+ObjectCopy.Text = "COPY TABLE"
+ObjectCopy.TextColor3 = Color3.fromRGB(255, 255, 255)
+ObjectCopy.TextScaled = true
+ObjectCopy.TextSize = 14.000
+ObjectCopy.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 3)
+UICorner_2.Parent = ObjectCopy
+
+
+local Player = game:GetService('Players').LocalPlayer
+local Camera = workspace.CurrentCamera
+
+if not setclipboard then
+	getfenv().setclipboard = setclipboard or toclipboard or function(...)
+		print('copy ',...)
+	end
+end
+
+Camera:GetPropertyChangedSignal('CFrame'):Connect(function()
+	CameraCFrame.Text = tostring(Camera.CFrame)
+end)
+
+CameraCFrameButton.MouseButton1Click:Connect(function()
+	setclipboard(tostring(CameraCFrame.Text))
+end)
+
+Camera:GetPropertyChangedSignal('Focus'):Connect(function()
+	PlayerCFrame.Text = tostring(Camera.Focus)
+end)
+
+PlayerCFrameButton.MouseButton1Click:Connect(function()
+	setclipboard(tostring(PlayerCFrame.Text))
+end)
+
+getfenv().VisitObject = function(instance:Instance)
+	if not instance then
+		return {}
+	end
+	
+	local dex = {}
+	for i,v in ipairs(instance:GetChildren()) do
+		if #v:GetChildren() == 0 then
+			dex[tostring(v)] = {
+				ClassName = v.ClassName,
+			}
+		else
+			dex[tostring(v)] = {
+				ClassName = v.ClassName,
+				Children = VisitObject(v)
+			}
+		end
+	end
+	
+	return dex
+end
+
+getfenv().stringify = function(v, spaces, usesemicolon, depth)
+	if type(v) ~= 'table' then
+		if typeof(v) == 'string' then
+			return '"'..tostring(v)..'"'
+		else
+			return tostring(v)
+		end
+	elseif not next(v) then
+		return '{}'
+	end
+
+	spaces = spaces or 4
+	depth = depth or 1
+
+	local space = (" "):rep(depth * spaces)
+	local sep = usesemicolon and ";" or ","
+	local s = "{"
+
+	for k, x in next, v do
+		s = s..("\n%s[%s] = %s%s"):format(space,type(k)=='number'and tostring(k)or('"%s"'):format(tostring(k)), stringify(x, spaces, usesemicolon, depth+1), sep)
+	end
+
+	return ("%s\n%s}"):format(s:sub(1,-2), space:sub(1, -spaces-1))
+end
+
+local UIListLayout = Instance.new("UIListLayout")
+UIListLayout.Parent = MouseTarget
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 3)
+
+local SideData = {
+	Path = '',
+	Value = ''
+}
+
+ObjectCopy.MouseButton1Click:Connect(function()
+	setclipboard(SideData.Value)
+end)
+
+ObjectPathCopy.MouseButton1Click:Connect(function()
+	setclipboard(SideData.Path)
+end)
+
+getfenv().TableToString = function(t,orgin:Instance)
+	local str = stringify(t)
+	local upp = [[-- Path: ]]..orgin:GetFullName()..'; \n'..str
+	SideData.Value = upp
+	SideData.Path = orgin:GetFullName()
+	for i,v in ipairs(MouseTarget:GetChildren()) do
+		if v:IsA('TextLabel') then
+			v:Destroy()
+		end
+	end
+	
+	for line in upp:gmatch("[^\n]+") do
+		local Line = Instance.new("TextLabel")
+		Line.Name = "Line"
+		Line.Parent = MouseTarget
+		Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Line.BackgroundTransparency = 1.000
+		Line.BorderColor3 = Color3.fromRGB(255, 255, 255)
+		Line.BorderSizePixel = 0
+		Line.Position = UDim2.new(0, 0, -1.50927676e-07, 0)
+		Line.Size = UDim2.new(3.27953267, 0, 0, 15)
+		Line.ZIndex = 8
+		Line.Font = Enum.Font.SourceSans
+		Line.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Line.TextScaled = true
+		Line.TextSize = 14.000
+		Line.TextWrapped = true
+		Line.TextXAlignment = Enum.TextXAlignment.Left
+		Line.Text = line
+	end
+	
+	MouseTarget.CanvasSize = UDim2.new(0,UIListLayout.AbsoluteContentSize.X,0,UIListLayout.AbsoluteContentSize.Y)
+end
+
+MouseTargetrButton.MouseButton1Click:Connect(function()
+	if MouseTargetrButton.Text == 'Click To View Object' then
+		
+		MouseTargetrButton.Text = 'Wait for Object'
+	end
+end)
+
+Player:GetMouse().Button1Down:Connect(function()
+	if MouseTargetrButton.Text == 'Wait for Object' then
+		local Target = Player:GetMouse().Target
+		local Table = {}
+		Table[tostring(Target)] = {
+			ClassName = Target.ClassName,
+			Children = VisitObject(Target)
+		}
+		
+		MouseTargetrButton.Text = 'Loading....'
+		
+		TableToString(Table,Target)
+		
+		MouseTargetrButton.Text = 'Click To View Object'
+	end
+end)
+
+Infinite_Yield.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+DarkDexv5.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/infyiff/backup/main/dex.lua'))()
+end)
+
+DarkDexv3.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+end)
